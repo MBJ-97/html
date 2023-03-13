@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+/* navbar styling */
+.navigation{
+   display: flex;
+   justify-content: space-between;
+    background-color: aqua;
+    padding: 20px 50px 20px 50px;
+}
+.navLinks {
+    display: flex;
+    gap: 10px;
+}
+ul {
+    list-style-type: none;
+}
+li a {
+    padding: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000
+
+}
+li a:hover {
+    text-decoration: underline;
+    background-color: #ff0000;
+    transition: ease-in 200ms;
+}
+
+li a:active {
+    background-color: #fff !important;
+}
+
+/* styling sections */
+/* hero section styling */
+section {
+    padding: 50px 25px 50px 25px;
+    border: 2px dashed #000 ;
+}
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.hero-image {
+    width: 40%;
+}
+.hero-text{
+    width: 60%;
+    padding: 0px 30px 0px 30px;
+}
+
+
+
+/* projects section */
+/* card styling */
+.card-wrapper {
+    /* background-color:black ; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    /* background-color: aquamarine; */
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding :10px 0 10px 0;
+}
+.project-image {
+    margin-bottom:15px;
+}
+.project-title {
+    margin-bottom: 60px;
+}
+.card-button{
+    background-color: #0081B4;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    color: #fff;
+}
+
+/* mobile styling */
+@media only screen and (max-width: 420px)  {
+
+    /* navbar styling */
+    .navigation{
+        display: block;
+    }
+    .navLinks {
+        text-align: center;
+        margin-top: 20px;
+        flex-direction: column;
+        background-color: azure;
+        padding: 15px;
+    }
+    /* hero section styling */
+    #home {
+        flex-wrap: wrap;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .hero-text{
+        width: 100%;
+        padding: 0px 30px 0px 30px;
+    }
+
+    /* projects section  */
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+    .project-image{
+        width: 100%;
+    }
+
+}
+
+.test {
+    position: relative;
+}
+/* .test-text {
+    position: relative;
+    z-index: 100;
+} */
+.test-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+    width: 120px;
+}
